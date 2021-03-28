@@ -23,16 +23,6 @@ public class RegisterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        TextView login = view.findViewById(R.id.login);
-
-        View.OnClickListener openLoginFragment = new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                ((MainActivity) getActivity()).replaceFragment(LoginFragment.class);
-            }
-        };
-
-        login.setOnClickListener(openLoginFragment);
-
     }
+
 }
